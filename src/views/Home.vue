@@ -1,30 +1,42 @@
 <template>
-  <!-- <div>
-    <Header />
-  </div> -->
-  <div class="row">
-    <div class="column">
-      <h3>Product</h3>
-      <hr />
-      <br />
-      <Productos />
+  <div style="height: 100%; width: 100%">
+    <div class="header">
+      <div style="width: 50%">
+        <img src="@/components/icons/shop.png" alt="" width="100" height="100" />
+        <h3>Store</h3>
+      </div>
+
+      <div class="header-right">
+        <h3 style="align-self: flex-end;" v-show="!mostrarProductosEnCarrito">Poduct</h3>
+        <h3 style="align-self: flex-end;" v-show="mostrarProductosEnCarrito">Shopping Cart</h3>
+        <button @click="toggleMostrarProductos">
+          {{ mostrarProductosEnCarrito ? 'Cart X' : 'Cart' }}
+        </button>
+      </div>
     </div>
-    <div class="column">
-      <button @click="toggleMostrarProductos">
-        {{ mostrarProductosEnCarrito ? 'Cart X' : 'Cart' }}
-      </button>
-      <h3>Store</h3>
-      <hr />
-      <br />
-      <Carrito v-show="mostrarProductosEnCarrito" />
-      <Producto v-show="!mostrarProductosEnCarrito" />
-      <!-- <button v-if="productos.length > 0" @click="realizarPago">Pagar</button> -->
+    <div style="display: flex">
+      <div class="column">
+        <hr />
+        <br />
+        <Productos />
+      </div>
+      <div class="column">
+        <div v-show="mostrarProductosEnCarrito">
+          <hr />
+          <br />
+          <Carrito />
+        </div>
+        <div v-show="!mostrarProductosEnCarrito">
+          <hr />
+          <br />
+          <Producto />
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Header from '../components/Header.vue'
 import Productos from '../components/Productos.vue'
 import Producto from '../components/Producto.vue'
 import Carrito from '../components/Carrito.vue'
@@ -36,15 +48,11 @@ export default {
     Productos,
     Producto,
     Carrito
-    // Header
   },
   setup() {
     const store = useStore()
     const productos = computed(() => store.state.productos)
     const mostrarProductosEnCarrito = ref(store.state.mostrarProductos)
-    const realizarPago = () => {
-      // Realizar la lógica para realizar el pago
-    }
     const toggleMostrarProductos = () => {
       mostrarProductosEnCarrito.value = !mostrarProductosEnCarrito.value
       store.dispatch('verCarrito', mostrarProductosEnCarrito)
@@ -53,7 +61,6 @@ export default {
     return {
       productos,
       mostrarProductosEnCarrito,
-      realizarPago,
       toggleMostrarProductos
     }
   }
@@ -62,10 +69,21 @@ export default {
 
 <style scoped>
 .column {
-  align-content: center;
+  align-content: top;
   vertical-align: center;
+  width: 50%;
+  padding: 10px;
+}
+.header {
   width: 100%;
-  height: 100%;
-  padding: 10%;
+  padding: 10px;
+  display: flex;
+}
+
+.header-right {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 </style>

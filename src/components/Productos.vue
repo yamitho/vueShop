@@ -35,10 +35,9 @@ export default {
 <style>
 .productos {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 2fr));
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
 }
-
 .producto {
   display: flex;
   flex-direction: column;
@@ -50,16 +49,6 @@ export default {
 .producto-imagen {
   width: 100px;
   height: 100px;
-}
-
-.producto-nombre {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
-.producto-precio {
-  margin-top: 5px;
-  color: #888;
 }
 
 button {

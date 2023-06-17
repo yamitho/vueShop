@@ -38,35 +38,35 @@ const store = createStore({
         },
         {
           id: 5,
-          nombre: 'Zukaritas',
-          precio: 30,
+          nombre: 'Leche',
+          precio: 10,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
         },
         {
           id: 6,
-          nombre: 'Zukaritas',
-          precio: 30,
+          nombre: 'Detodito',
+          precio: 20,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://www.superlosmontes.com/site/12619-large_default/detodito--frito-lay-bbq-65grs.jpg'
         },
         {
           id: 7,
-          nombre: 'Zukaritas',
+          nombre: 'Milo',
           precio: 30,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://static.merqueo.com/images/products/large/b387b0d4-a1d9-4af2-bfe9-5618665ccd4b.jpg'
         },
         {
           id: 8,
-          nombre: 'Zukaritas',
+          nombre: 'Milo',
           precio: 30,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://static.merqueo.com/images/products/large/b387b0d4-a1d9-4af2-bfe9-5618665ccd4b.jpg'
         },
         {
           id: 9,
@@ -78,27 +78,27 @@ const store = createStore({
         },
         {
           id: 10,
-          nombre: 'Zukaritas',
-          precio: 30,
+          nombre: 'Detodito',
+          precio: 20,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://www.superlosmontes.com/site/12619-large_default/detodito--frito-lay-bbq-65grs.jpg'
         },
         {
           id: 11,
-          nombre: 'Zukaritas',
-          precio: 30,
+          nombre: 'Leche',
+          precio: 10,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
         },
         {
           id: 12,
-          nombre: 'Zukaritas',
-          precio: 30,
+          nombre: 'Leche',
+          precio: 10,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
         }
       ],
       carrito: [],
