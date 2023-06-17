@@ -1,25 +1,21 @@
 <template>
   <div>
     <div v-if="total != '0'">
-      <ul>
-        <li v-for="item in carrito" :key="item.producto.id">
-          <div>
-            {{ item.cantidad }}
-          </div>
+      <div v-for="item in carrito" :key="item.producto.id">
+        <div style="display: flex; align-items: center;">
+          <span class="span-cantidad" style="">{{ item.cantidad }}</span>
           <img :src="item.producto.imagen" alt="Imagen del producto" class="producto-imagen" />
-          <div>{{ item.producto.nombre }} - {{ item.producto.precio }}</div>
-        </li>
-      </ul>
+        </div>
+      </div>
       <div>
         Total: {{ total }}
-
         <form>
           <div ref="checkoutForm"></div>
         </form>
       </div>
     </div>
     <div v-else>
-      <div>Please choose a product on the left</div>
+      <div><span>Please choose a product on the left</span></div>
     </div>
   </div>
 </template>
@@ -79,3 +75,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.producto-imagen {
+  width: 10%;
+  height: 100%;
+}
+</style>

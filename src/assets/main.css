@@ -33,3 +33,43 @@ a,
     padding: 0 2rem;
   }
 }
+
+.shop-button {
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5%;
+  border-color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: blueviolet;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p, span, button {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btn-subtract{
+
+  background-color: gray;
+  color: black;
+  border-color: transparent;
+}
+
+.btn-add {
+  background-color: blueviolet;
+  color: white;
+  border-color: transparent;
+}
+
+.span-cantidad {
+  background-color: blueviolet; 
+  height: 40px; 
+  width: 40px; 
+  border-radius: 100%;
+  padding: 10px;
+  justify-content: center;
+  display: flex; 
+  align-items: center;
+}

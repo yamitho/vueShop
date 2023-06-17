@@ -1,17 +1,21 @@
 <template>
   <div v-if="Object.keys(producto).length !== 0">
-    <ul>
-      <li>
-        <div></div>
-        <img :src="producto.imagen" alt="Imagen del producto" class="producto-imagen" />
-        <div>{{ producto.nombre }} - {{ producto.cantidad }} - {{ producto.precio }}</div>
-        <button @click="aumentarCantidad()">+</button>
-        <button @click="disminuirCantidad()">-</button>
-      </li>
-    </ul>
+    <div>
+      <span class="span-cantidad">
+        {{ producto.cantidad }}
+      </span>
+    </div>
+    <img :src="producto.imagen" alt="Imagen del producto" class="producto-imagen" />
+    <div style="justify-content: space-between; display: flex">
+      {{ producto.nombre }} - ${{ producto.precio }}
+      <div>
+        <button class="btn-subtract" @click="disminuirCantidad()">-</button>
+        <button class="btn-add" @click="aumentarCantidad()">+</button>
+      </div>
+    </div>
   </div>
   <div v-else>
-    <div>Please choose a product on the left</div>
+    <div><span>Please choose a product on the left</span></div>
   </div>
 </template>
 
@@ -59,9 +63,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .producto-imagen {
-  width: 100px;
-  height: 100px;
+  width: 50%;
+  height: 100%;
 }
 </style>

@@ -2,15 +2,23 @@
   <div style="height: 100%; width: 100%">
     <div class="header">
       <div style="width: 50%">
-        <img src="@/components/icons/shop.png" alt="" width="100" height="100" />
+        <img src="@/components/icons/shop.png" width="100" height="100" />
         <h3>Store</h3>
       </div>
 
       <div class="header-right">
-        <h3 style="align-self: flex-end;" v-show="!mostrarProductosEnCarrito">Poduct</h3>
-        <h3 style="align-self: flex-end;" v-show="mostrarProductosEnCarrito">Shopping Cart</h3>
-        <button @click="toggleMostrarProductos">
-          {{ mostrarProductosEnCarrito ? 'Cart X' : 'Cart' }}
+        <h3 style="align-self: flex-end" v-show="!mostrarProductosEnCarrito">Poduct</h3>
+        <h3 style="align-self: flex-end" v-show="mostrarProductosEnCarrito">Shopping Cart</h3>
+        <button class="shop-button" @click="toggleMostrarProductos">
+          <div style="display: flex; align-items: center" v-if="mostrarProductosEnCarrito">
+            <img src="@/components/icons/shop.png" alt="" width="30" height="30" />
+            <span>${{ total }}</span>
+          </div>
+
+          <div style="display: flex; align-items: center" v-else>
+            <img src="@/components/icons/shop.png" alt="" width="30" height="30" />
+            <span>${{ total }}</span>
+          </div>
         </button>
       </div>
     </div>
@@ -58,10 +66,17 @@ export default {
       store.dispatch('verCarrito', mostrarProductosEnCarrito)
     }
 
+    const total = computed(() => {
+      return store.state.carrito.reduce((acc, item) => {
+        return acc + item.producto.precio * item.cantidad
+      }, 0)
+    })
+
     return {
       productos,
       mostrarProductosEnCarrito,
-      toggleMostrarProductos
+      toggleMostrarProductos,
+      total
     }
   }
 }
@@ -72,12 +87,14 @@ export default {
   align-content: top;
   vertical-align: center;
   width: 50%;
-  padding: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .header {
   width: 100%;
   padding: 10px;
   display: flex;
+  padding-left: 5%;
 }
 
 .header-right {
@@ -85,5 +102,6 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 5%;
 }
 </style>

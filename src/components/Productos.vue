@@ -32,7 +32,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .productos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -47,8 +47,8 @@ export default {
 }
 
 .producto-imagen {
-  width: 100px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
 }
 
 button {
