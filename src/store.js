@@ -7,98 +7,98 @@ const store = createStore({
         {
           id: 1,
           nombre: 'Leche',
-          precio: 10,
+          precio: 1.50,
           descripcion: '',
           imagen:
-            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
+            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 2,
           nombre: 'Detodito',
-          precio: 20,
+          precio: 1.15,
           descripcion: '',
           imagen:
-            'https://www.superlosmontes.com/site/12619-large_default/detodito--frito-lay-bbq-65grs.jpg'
+            'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 3,
           nombre: 'Milo',
-          precio: 30,
+          precio: 2.25,
           descripcion: '',
           imagen:
-            'https://static.merqueo.com/images/products/large/b387b0d4-a1d9-4af2-bfe9-5618665ccd4b.jpg'
+            'https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_product/field_product_images/milo-ognk0b2vegecoxnalykq.png'
         },
         {
           id: 4,
           nombre: 'Zukaritas',
-          precio: 30,
+          precio: 4,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://devinmotionstorage.blob.core.windows.net/emotion/surtiapp/images/products/mobile/COVA-000055828_22020407500000.png'
         },
         {
           id: 5,
           nombre: 'Leche',
-          precio: 10,
+          precio: 1.50,
           descripcion: '',
           imagen:
-            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
+            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 6,
           nombre: 'Detodito',
-          precio: 20,
+          precio: 1.15,
           descripcion: '',
           imagen:
-            'https://www.superlosmontes.com/site/12619-large_default/detodito--frito-lay-bbq-65grs.jpg'
+            'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 7,
           nombre: 'Milo',
-          precio: 30,
+          precio: 2.25,
           descripcion: '',
           imagen:
-            'https://static.merqueo.com/images/products/large/b387b0d4-a1d9-4af2-bfe9-5618665ccd4b.jpg'
+            'https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_product/field_product_images/milo-ognk0b2vegecoxnalykq.png'
         },
         {
           id: 8,
           nombre: 'Milo',
-          precio: 30,
+          precio: 2.25,
           descripcion: '',
           imagen:
-            'https://static.merqueo.com/images/products/large/b387b0d4-a1d9-4af2-bfe9-5618665ccd4b.jpg'
+            'https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_product/field_product_images/milo-ognk0b2vegecoxnalykq.png'
         },
         {
           id: 9,
           nombre: 'Zukaritas',
-          precio: 30,
+          precio: 4,
           descripcion: '',
           imagen:
-            'https://images.kglobalservices.com/www.kelloggs.com.co/es_co/product/product_4508506/kicproductimage-121045_kicproductimage-121045.jpg'
+            'https://devinmotionstorage.blob.core.windows.net/emotion/surtiapp/images/products/mobile/COVA-000055828_22020407500000.png'
         },
         {
           id: 10,
           nombre: 'Detodito',
-          precio: 20,
+          precio: 1.15,
           descripcion: '',
           imagen:
-            'https://www.superlosmontes.com/site/12619-large_default/detodito--frito-lay-bbq-65grs.jpg'
+            'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 11,
           nombre: 'Leche',
-          precio: 10,
+          precio: 1.50,
           descripcion: '',
           imagen:
-            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
+            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 12,
           nombre: 'Leche',
-          precio: 10,
+          precio: 1.50,
           descripcion: '',
           imagen:
-            'https://supertiendascomunal.com/5476-large_default/leche-entera-alqueria-13-ml.jpg'
+            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         }
       ],
       carrito: [],
