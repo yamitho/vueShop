@@ -48,7 +48,7 @@
 import Productos from '../components/Productos.vue'
 import Producto from '../components/Producto.vue'
 import Carrito from '../components/Carrito.vue'
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import { useStore } from 'vuex'
 
 export default {
@@ -71,6 +71,13 @@ export default {
         return acc + item.producto.precio * item.cantidad
       }, 0)
     })
+
+    watch(
+      () => store.state.mostrarProductos,
+      (nuevoValor) => {
+        mostrarProductosEnCarrito.value = nuevoValor
+      }
+    )
 
     return {
       productos,

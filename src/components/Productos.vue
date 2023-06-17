@@ -22,6 +22,7 @@ export default {
 
     const seleccionarProducto = (producto) => {
       store.dispatch('productoSeleccionado', producto)
+      store.dispatch('ocultarCarrito')
     }
 
     return {

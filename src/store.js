@@ -7,18 +7,16 @@ const store = createStore({
         {
           id: 1,
           nombre: 'Leche',
-          precio: 1.50,
+          precio: 1.5,
           descripcion: '',
-          imagen:
-            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
+          imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 2,
           nombre: 'Detodito',
           precio: 1.15,
           descripcion: '',
-          imagen:
-            'https://detoditocolombia.com.co/img/snackBBQ.png'
+          imagen: 'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 3,
@@ -39,18 +37,16 @@ const store = createStore({
         {
           id: 5,
           nombre: 'Leche',
-          precio: 1.50,
+          precio: 1.5,
           descripcion: '',
-          imagen:
-            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
+          imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 6,
           nombre: 'Detodito',
           precio: 1.15,
           descripcion: '',
-          imagen:
-            'https://detoditocolombia.com.co/img/snackBBQ.png'
+          imagen: 'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 7,
@@ -81,24 +77,21 @@ const store = createStore({
           nombre: 'Detodito',
           precio: 1.15,
           descripcion: '',
-          imagen:
-            'https://detoditocolombia.com.co/img/snackBBQ.png'
+          imagen: 'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 11,
           nombre: 'Leche',
-          precio: 1.50,
+          precio: 1.5,
           descripcion: '',
-          imagen:
-            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
+          imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 12,
           nombre: 'Leche',
-          precio: 1.50,
+          precio: 1.5,
           descripcion: '',
-          imagen:
-            'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
+          imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         }
       ],
       carrito: [],
@@ -109,6 +102,10 @@ const store = createStore({
   mutations: {
     verCarrito(state, mostrarProductos) {
       state.mostrarProductos = mostrarProductos
+      localStorage.setItem('mostrarProductos', JSON.stringify(state.mostrarProductos))
+    },
+    ocultarCarrito(state) {
+      state.mostrarProductos = false
       localStorage.setItem('mostrarProductos', JSON.stringify(state.mostrarProductos))
     },
     productoSeleccionado(state, producto) {
@@ -176,8 +173,11 @@ const store = createStore({
     productoSeleccionado({ commit }, producto) {
       commit('productoSeleccionado', producto)
     },
-    verCarrito({ commit }) {
-      commit('verCarrito')
+    verCarrito({ commit }, mostrarProductos) {
+      commit('verCarrito', mostrarProductos)
+    },
+    ocultarCarrito({ commit }) {
+      commit('ocultarCarrito')
     }
   }
 })
