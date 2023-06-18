@@ -23,6 +23,10 @@ export default {
     const seleccionarProducto = (producto) => {
       store.dispatch('productoSeleccionado', producto)
       store.dispatch('ocultarCarrito')
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      })
     }
 
     return {
@@ -54,5 +58,14 @@ export default {
 
 button {
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .productos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    overflow-y: scroll;
+  }
 }
 </style>
