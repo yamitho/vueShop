@@ -13,6 +13,11 @@
         <button class="btn-add" @click="aumentarCantidad()">+</button>
       </div>
     </div>
+    <hr/>
+    <div>
+      {{ producto.descripcion }}
+    </div>
+    <hr/>
   </div>
   <div v-else>
     <div><span>Please choose a product on the left</span></div>

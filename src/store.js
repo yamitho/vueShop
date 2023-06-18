@@ -8,21 +8,21 @@ const store = createStore({
           id: 1,
           nombre: 'Leche',
           precio: 1.5,
-          descripcion: '',
+          descripcion: 'It is an opaque whitish nutritive secretion produced by the secretory cells of the mammary glands of mammals, including monotremes.',
           imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 2,
           nombre: 'Detodito',
           precio: 1.15,
-          descripcion: '',
+          descripcion: 'It is Ideal to overcome hunger and to share with others on different occasions.',
           imagen: 'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 3,
           nombre: 'Milo',
           precio: 2.25,
-          descripcion: '',
+          descripcion: 'It is the worlds most trusted chocolate malt beverage. With the goodness of cocoa, milk and malt, a glass of delicious MILO contains essential vitamins and minerals that children need, including calcium for strong bones and B vitamins and minerals to help the body release energy.',
           imagen:
             'https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_product/field_product_images/milo-ognk0b2vegecoxnalykq.png'
         },
@@ -30,7 +30,7 @@ const store = createStore({
           id: 4,
           nombre: 'Zukaritas',
           precio: 4,
-          descripcion: '',
+          descripcion: 'Corn cereals in the form of flakes or small sheets covered in sugar.',
           imagen:
             'https://devinmotionstorage.blob.core.windows.net/emotion/surtiapp/images/products/mobile/COVA-000055828_22020407500000.png'
         },
@@ -38,21 +38,21 @@ const store = createStore({
           id: 5,
           nombre: 'Leche',
           precio: 1.5,
-          descripcion: '',
+          descripcion: 'It is an opaque whitish nutritive secretion produced by the secretory cells of the mammary glands of mammals, including monotremes.',
           imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 6,
           nombre: 'Detodito',
           precio: 1.15,
-          descripcion: '',
+          descripcion: 'It is Ideal to overcome hunger and to share with others on different occasions.',
           imagen: 'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 7,
           nombre: 'Milo',
           precio: 2.25,
-          descripcion: '',
+          descripcion: 'It is the worlds most trusted chocolate malt beverage. With the goodness of cocoa, milk and malt, a glass of delicious MILO contains essential vitamins and minerals that children need, including calcium for strong bones and B vitamins and minerals to help the body release energy.',
           imagen:
             'https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_product/field_product_images/milo-ognk0b2vegecoxnalykq.png'
         },
@@ -60,7 +60,7 @@ const store = createStore({
           id: 8,
           nombre: 'Milo',
           precio: 2.25,
-          descripcion: '',
+          descripcion: 'It is the worlds most trusted chocolate malt beverage. With the goodness of cocoa, milk and malt, a glass of delicious MILO contains essential vitamins and minerals that children need, including calcium for strong bones and B vitamins and minerals to help the body release energy.',
           imagen:
             'https://www.goodnes.com/sites/g/files/jgfbjl321/files/gdn_product/field_product_images/milo-ognk0b2vegecoxnalykq.png'
         },
@@ -68,7 +68,7 @@ const store = createStore({
           id: 9,
           nombre: 'Zukaritas',
           precio: 4,
-          descripcion: '',
+          descripcion: 'Corn cereals in the form of flakes or small sheets covered in sugar.',
           imagen:
             'https://devinmotionstorage.blob.core.windows.net/emotion/surtiapp/images/products/mobile/COVA-000055828_22020407500000.png'
         },
@@ -76,21 +76,21 @@ const store = createStore({
           id: 10,
           nombre: 'Detodito',
           precio: 1.15,
-          descripcion: '',
+          descripcion: 'It is Ideal to overcome hunger and to share with others on different occasions.',
           imagen: 'https://detoditocolombia.com.co/img/snackBBQ.png'
         },
         {
           id: 11,
           nombre: 'Leche',
           precio: 1.5,
-          descripcion: '',
+          descripcion: 'It is an opaque whitish nutritive secretion produced by the secretory cells of the mammary glands of mammals, including monotremes.',
           imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         },
         {
           id: 12,
           nombre: 'Leche',
           precio: 1.5,
-          descripcion: '',
+          descripcion: 'It is an opaque whitish nutritive secretion produced by the secretory cells of the mammary glands of mammals, including monotremes.',
           imagen: 'https://citymercao.com/wp-content/uploads/2020/10/alqueria-megalitro-entera.png'
         }
       ],
