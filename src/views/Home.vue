@@ -71,7 +71,7 @@ export default {
         return acc + item.producto.precio * item.cantidad
       }, 0)
     })
-
+    
     watch(
       () => store.state.mostrarProductos,
       (nuevoValor) => {
